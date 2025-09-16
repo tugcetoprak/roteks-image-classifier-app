@@ -11,7 +11,7 @@ st.title("🔍 Image Classification (ONNX)")
 
 MODEL_PATH = "dag_model.onnx"
 MODEL_URL = st.secrets.get("MODEL_URL", "")  # Optional: set in Streamlit Secrets
-CLASS_NAMES = ["Class 1", "Class 2", "Class 3", "Class 4"]  # TODO: replace with your real labels
+CLASS_NAMES = ["A", "BO", "E", "K"]  # TODO: replace with your real labels
 
 def ensure_model():
     if os.path.exists(MODEL_PATH):
