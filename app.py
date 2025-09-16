@@ -9,7 +9,7 @@ import requests
 st.set_page_config(page_title="Image Classifier", page_icon="🔍")
 st.title("🔍 Image Classification (ONNX)")
 
-MODEL_PATH = "dag_model.onnx"
+MODEL_PATH = "dag_modelv2.onnx"
 MODEL_URL = st.secrets.get("MODEL_URL", "")  # Optional: set in Streamlit Secrets
 CLASS_NAMES = ["A", "BO", "E", "K"]  # TODO: replace with your real labels
 
