@@ -10,7 +10,7 @@ st.set_page_config(page_title="4-Image Majority Classifier", page_icon="🧮")
 st.title("🧮 4-Image Majority Classifier (ONNX)")
 
 # --- AYARLAR ---
-MODEL_PATH = "dag_modelv2.onnx"
+MODEL_PATH = "dag_modelv3.onnx"
 CLASS_NAMES = ["A", "BO", "E", "K"]  # <-- kendi etiketlerinle güncelle
 
 # Modeli cache'leyerek tek sefer yükle
