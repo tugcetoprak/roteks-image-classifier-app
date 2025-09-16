@@ -41,7 +41,9 @@ ort_session = load_model()
 uploaded = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 if uploaded:
     image = Image.open(uploaded).convert("RGB")
-    st.image(image, caption="Uploaded", use_column_width=True)
+    #st.image(image, caption="Uploaded", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
+
 
     img = np.array(image)
     img = cv2.resize(img, (224, 224))
